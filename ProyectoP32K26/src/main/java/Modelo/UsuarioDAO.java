@@ -16,12 +16,12 @@ import java.util.List;
  */
 public class UsuarioDAO {
 
-    private static final String SQL_SELECT = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM tbl_usuario";
-    private static final String SQL_INSERT = "INSERT INTO tbl_usuario(usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-    private static final String SQL_UPDATE = "UPDATE tbl_usuario SET usunombre=?, usucontrasena=?,  usuultimasesion=?, usuestatus=?, usunombrereal=?, usucorreoe=?, usutelefono=?, usudireccion=?, tipuid=?  WHERE usuid = ?";
-    private static final String SQL_DELETE = "DELETE FROM tbl_usuario WHERE usuid=?";
-    private static final String SQL_SELECT_NOMBRE = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM tbl_usuario WHERE usunombre = ?";
-    private static final String SQL_SELECT_ID = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM tbl_usuario WHERE usuid = ?";     
+    private static final String SQL_SELECT = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM usuario";
+    private static final String SQL_INSERT = "INSERT INTO usuario(usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    private static final String SQL_UPDATE = "UPDATE usuario SET usunombre=?, usucontrasena=?,  usuultimasesion=?, usuestatus=?, usunombrereal=?, usucorreoe=?, usutelefono=?, usudireccion=?, tipuid=?  WHERE usuid = ?";
+    private static final String SQL_DELETE = "DELETE FROM usuario WHERE usuid=?";
+    private static final String SQL_SELECT_NOMBRE = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM usuario WHERE usunombre = ?";
+    private static final String SQL_SELECT_ID = "SELECT usuid, usunombre, usucontrasena, usuultimasesion, usuestatus, usunombrereal, usucorreoe, usutelefono, usudireccion, tipuid FROM usuario WHERE usuid = ?";     
 
     public List<clsUsuario> consultaUsuarios() {
         Connection conn = null;

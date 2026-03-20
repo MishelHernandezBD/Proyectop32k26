@@ -184,18 +184,19 @@ public class frmLogin extends javax.swing.JFrame {
                     usuarioRegistrado.setUsuCodigo(usuario.getUsuId());
                     usuarioRegistrado.setUsuNombre(usuario.getUsuNombre());
                     // Registro de Bitacora
-                    int resultadoBitacora=0;
-                    clsBitacora bitacoraRegistro = new clsBitacora();
-                    bitacoraRegistro.setUsucodigo(usuario.getUsuId());
-                    bitacoraRegistro.setAplcodigo(codigoAplicacion);
-                    bitacoraRegistro.setBitaccion("INI");
-                    BitacoraDAO bitacoradao = new BitacoraDAO();
-                    resultadoBitacora = bitacoradao.insert(bitacoraRegistro);
+                    //** int resultadoBitacora=0;
+                    //clsBitacora bitacoraRegistro = new clsBitacora();
+                    //bitacoraRegistro.setUsucodigo(usuario.getUsuId());
+                    //bitacoraRegistro.setAplcodigo(codigoAplicacion);
+                    //bitacoraRegistro.setBitaccion("INI");
+                    //BitacoraDAO bitacoradao = new BitacoraDAO();
+                    //resultadoBitacora = bitacoradao.insert(bitacoraRegistro);
                     
                     // Menu general---
-                    MdiSeguridad menuGeneral = new MdiSeguridad();
-                    menuGeneral.setVisible(true);
-                    this.dispose();
+                    //MdiSeguridad menuGeneral = new MdiSeguridad();
+                    //menuGeneral.setVisible(true);
+                    //this.dispose();
+                           
                     
                     //---Agregando switch case para funcionalidad de todos los módulos(incompleto porque aún no hay MDI'S de todos)
                     //Victor Jerez
